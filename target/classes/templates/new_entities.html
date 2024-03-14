@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Date Time Timestamp</title>
+</head>
+<body>
+    <form th:action="/save" method="post">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time">
+        <br>
+        <label for="timestamp">Timestamp:</label>
+        <input type="datetime-local" id="timestamp" name="timestamp">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
